@@ -42,6 +42,8 @@ function guardarcorreo() {
     alert("Correo registrado");
   }
 }
+
+
 function ingresar() {
   const correo = document.getElementById("correo").value.trim(); // .trim() para eliminar espacios en blanco
 
