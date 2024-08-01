@@ -1,0 +1,22 @@
+* {
+  transition: all 0.5s;
+}
+
+body {
+  margin: 0;
+  background: #7f5af0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+div:first-child {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 40px;
+
+  article img {
+    width: clamp(18.75rem, 9.821rem + 23.81vw, 31.25rem);
+  }
+}

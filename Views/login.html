@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Assets/styles/css/login.css" />
+    <link rel="stylesheet" href="/Assets/styles/css/font.css" />
+    <link
+      rel="shortcut icon"
+      href="/Assets/Archivos/img/icon.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- login -->
+
+    <section id="login" class="animate__animated animate__fadeInUp">
+      <div class="contenedor">
+        <div class="login">
+          <article><img src="/Assets/Archivos/img/icon.png" alt="" /></article>
+          <h2>Iniciar sesion</h2>
+          <div class="google-login">
+            <article>
+              <img src="/Assets/Archivos/img/google-icon.svg" alt="" />
+            </article>
+            <span>Continuar con Google</span>
+          </div>
+          <hr />
+          <form method="get">
+            <label for="correo">Correo electronico</label>
+            <input
+              type="email"
+              id="correo"
+              placeholder="Ingrese su correo electrónico"
+            />
+
+            <button class="boton" onclick="ingresar()">Ingresar</button>
+          </form>
+          <span class="enlaces"
+            ><a href="#">¿Se te olvido tu contraseña?</a></span
+          >
+          <span class="enlaces registrar"
+            >¿Aun no tienes una cuenta?<a href="#" id="ingresar"
+              >inscribirse</a
+            ></span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- registro -->
+
+    <section
+      class="animate__animated animate__fadeInUp"
+      id="registro"
+      style="display: none"
+    >
+      <div class="contenedor">
+        <div class="login">
+          <article><img src="/Assets/Archivos/img/icon.png" alt="" /></article>
+          <h2>Registrarse</h2>
+          <div class="google-login">
+            <article>
+              <img src="/Assets/Archivos/img/google-icon.svg" alt="" />
+            </article>
+            <span>Continuar con Google</span>
+          </div>
+          <hr />
+          <form
+            action="
+          "
+          >
+            <label for="correo">Correo electronico</label>
+            <input
+              type="email"
+              id="registrar_correo"
+              placeholder="Ingrese su correo electrónico"
+            />
+            <button class="boton" onclick="guardarcorreo()">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/Assets/scripts/login.js"></script>
+  </body>
+</html>
