@@ -1,0 +1,126 @@
+body {
+  color: #fff;
+  background: -webkit-linear-gradient(90deg, #6b377c, #009ee3, #29e665); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, #6b377c, #009ee3, #29e665); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "inter";
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+#main {
+  background: #16161a;
+  display: grid;
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 50px;
+  max-width: 50vw;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+#main span {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+#main .contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+#main .contenedor .categoria {
+  display: grid;
+  justify-items: center;
+}
+
+nav {
+  position: relative;
+  margin: auto;
+  max-width: 50vw;
+  background: rgb(134, 134, 134);
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  height: 50px;
+  top: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+nav li {
+  display: grid;
+  justify-items: center;
+  transition: all 0.5s;
+}
+nav li img {
+  transition: all 0.3s;
+}
+nav li:hover {
+  color: rgb(211, 133, 15);
+}
+nav li:hover img {
+  position: relative;
+  bottom: 10px;
+  scale: 1.5;
+}
+
+#perfil {
+  background: #16161a;
+  border: 1.5px solid rgb(209, 213, 219);
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 50px;
+  max-width: 50vw;
+  width: 100%;
+  height: 100vh;
+  border-radius: 15px;
+}
+#perfil .contenedor h2 {
+  margin-bottom: 100px;
+}
+#perfil .contenedor .perfil_datos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+#perfil .contenedor .perfil_datos img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+#perfil .contenedor .perfil_datos strong {
+  font-size: 25px;
+}
+#perfil .contenedor .perfil_datos span {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5960784314);
+}
+#perfil .contenedor .logout {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#perfil .contenedor .logout a {
+  cursor: pointer;
+  font-size: 19px;
+  text-decoration: none;
+  color: #ff0000;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */
