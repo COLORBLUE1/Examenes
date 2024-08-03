@@ -1,77 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="/Assets/styles/css/main.css" />
-    <link rel="stylesheet" href="/Assets/styles/css/font.css">
+    <link rel="stylesheet" href="/Assets/styles/css/font.css" />
+    <link
+      rel="shortcut icon"
+      href="/Assets/Archivos/img/icon.png"
+      type="image/png  "
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Main</title>
   </head>
   <body>
-
+    
     <!-- Section main -->
 
-    <section id="main" style="display:none" class="animate__animated animate__zoomIn">
+    <section id="home-section">
       <span>Practica tus conocimientos en la categoria que prefieras</span>
 
       <div class="contenedor">
         <div class="categoria">
-          <a href=""><img src="/Assets/Archivos/img/icon.png" alt="" /></a
-          ><strong>Hola 1</strong>
+          <a href=""
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML" /></a
+          ><strong>HTML</strong>
         </div>
         <div class="categoria">
-          <a href=""><img src="/Assets/Archivos/img/icon.png" alt="" /></a
-          ><strong>Hola 2</strong>
+          <a href=""
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="CSS" /></a
+          ><strong>CSS</strong>
         </div>
         <div class="categoria">
-          <a href=""><img src="/Assets/Archivos/img/icon.png" alt="" /></a
-          ><strong>Hola 3</strong>
+          <a href=""
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+              alt="JS" /></a
+          ><strong>JS</strong>
         </div>
         <div class="categoria">
-          <a href=""><img src="/Assets/Archivos/img/icon.png" alt="" /></a
-          ><strong>Hola 4</strong>
+          <a href=""
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+              alt="FIGMA" /></a
+          ><strong>FIGMA</strong>
         </div>
         <div class="categoria">
-          <a href=""><img src="/Assets/Archivos/img/icon.png" alt="" /></a
-          ><strong>Hola 5</strong>
+          <a href=""><img src="/Assets/Archivos/img/ux.svg" alt="UX" /></a
+          ><strong>UX</strong>
         </div>
       </div>
     </section>
 
- <!-- Section Estadistica -->
+    <section
+      id="estadisticas-section"
+      class="animate__animated animate__fadeInRight section"
+    >
+      <h1>Hola</h1>
+    </section>
 
- <section style="display:none" class="animate__animated animate__fadeInRight">
-  
- </section>
+    <!-- Section Estadistica -->
 
-  <!-- Section Perfil -->
+    <section
+      id="estadisticas-section"
+      class="animate__animated animate__fadeInRight section"
+    >
+      <h1>Hola</h1>
+    </section>
 
-  <section id="perfil" class="animate__animated animate__fadeInLeft">
-  <div class="contenedor">
-    <h2>Perfil</h2>
+    <!-- Section Perfil -->
+    <section
+      id="cuenta-section"
+      class="animate__animated animate__fadeInLeft section"
+    >
+      <div class="contenedor">
+        <h2>Perfil</h2>
+        <div class="perfil_datos">
+          <img
+            id="fotoPerfil"
+            src="/Assets/Archivos/img/icon.png"
+            alt="Foto de perfil"
+          />
+          <strong id="user">Nombre Usuario</strong>
+          <span id="correoPerfil">Correo</span>
+        </div>
 
-    <div class="perfil_datos">
-      <img src="/Assets/Archivos/img/icon.png" alt="" />
-      <strong>Nombre Usuario</strong>
-      <span>Correo</span>
+        <!-- Sección para editar el perfil -->
+        <div class="perfil_editar">
+          <h3>Editar Perfil</h3>
+          <label for="editar_nombre">Nombre:</label>
+          <input
+            type="text"
+            id="editar_nombre"
+            placeholder="Ingrese su nombre"
+          />
+          <label for="editar_correo">Correo electrónico:</label>
+          <input
+            type="email"
+            id="editar_correo"
+            placeholder="Ingrese su correo electrónico"
+          />
 
+          <!-- Campo para cambiar la foto de perfil -->
+          <label for="editar_foto">Foto de perfil:</label>
+          <input type="file" id="editar_foto" accept="image/*" />
+          <img
+            id="fotoPreview"
+            src=""
+            alt="Vista previa de la foto"
+            style="display: none; max-width: 100px; margin-top: 10px"
+          />
 
-    </div>
-    <div class="logout">
-      <a href="/Views/login.html">Cerrar Sesion</a>
+          <button type="button" id="guardarCambios">Guardar Cambios</button>
+        </div>
 
-  </div>
-  </section>
+        <div class="logout">
+          <a href="/Views/login.html">Cerrar Sesión</a>
+        </div>
+      </div>
+      <script src="/Assets/scripts/perfil.js"></script>
+    </section>
 
     <nav>
       <ul>
-        <li><img src="/Assets/Archivos/img/google-icon.svg" alt="" />Home</li>
-        <li>
-          <img src="/Assets/Archivos/img/google-icon.svg" alt="" />Estadistica
+        <li id="home" onclick="showSection('home')">
+          <img src="/Assets/Archivos/img/home.svg" alt="home" />Home
         </li>
-        <li><img src="/Assets/Archivos/img/google-icon.svg" alt="" />Perfil</li>
+        <li id="estadisticas" onclick="showSection('estadisticas')">
+          <img
+            src="/Assets/Archivos/img/stadisr.svg"
+            alt="estadistica"
+          />Estadistica
+        </li>
+        <li id="cuenta" onclick="showSection('cuenta')">
+          <img src="/Assets/Archivos/img/user.svg" alt="perfil" />Perfil
+        </li>
       </ul>
     </nav>
+    <script src="/Assets/scripts/main.js"></script>
+    <script src="/Controlador/perfil.js"></script>
   </body>
 </html>
