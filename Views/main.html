@@ -17,47 +17,49 @@
     <title>Main</title>
   </head>
   <body>
-    
     <!-- Section main -->
 
     <section id="home-section">
-      <span>Practica tus conocimientos en la categoria que prefieras</span>
+      <span>Practica tus conocimientos en la categoría que prefieras</span>
 
       <div class="contenedor">
         <div class="categoria">
-          <a href=""
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-              alt="HTML" /></a
-          ><strong>HTML</strong>
+          <a href="#" data-tema="HTML"
+            ><img src="/Assets/Archivos/img/html.svg" alt="HTML"
+          /></a>
+          <strong>HTML</strong>
         </div>
         <div class="categoria">
-          <a href=""
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-              alt="CSS" /></a
-          ><strong>CSS</strong>
+          <a href="#" data-tema="CSS"
+            ><img src="/Assets/Archivos/img/css.svg" alt="CSS"
+          /></a>
+          <strong>CSS</strong>
         </div>
         <div class="categoria">
-          <a href=""
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-              alt="JS" /></a
-          ><strong>JS</strong>
+          <a href="#" data-tema="JavaScript"
+            ><img src="/Assets/Archivos/img/js.svg" alt="JS"
+          /></a>
+          <strong>JS</strong>
         </div>
         <div class="categoria">
-          <a href=""
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-              alt="FIGMA" /></a
-          ><strong>FIGMA</strong>
-        </div>
-        <div class="categoria">
-          <a href=""><img src="/Assets/Archivos/img/ux.svg" alt="UX" /></a
-          ><strong>UX</strong>
+          <a href="#" data-tema="UX"
+            ><img src="/Assets/Archivos/img/ux.svg" alt="UX"
+          /></a>
+          <strong>UX</strong>
         </div>
       </div>
     </section>
+
+    <script>
+      document.querySelectorAll(".categoria a").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const tema = event.currentTarget.getAttribute("data-tema");
+          sessionStorage.setItem("tema", tema);
+          // Redirigir a preguntas.html
+          window.location.href = "/Views/preguntas.html";
+        });
+      });
+    </script>
 
     <section
       id="estadisticas-section"

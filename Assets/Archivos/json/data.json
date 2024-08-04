@@ -1,0 +1,829 @@
+{
+  "preguntas": {
+    "temas": {
+      "HTML": {
+        "opciones_unica_respuesta": [
+          {
+            "id": 1,
+            "pregunta": "¿Cuál de las siguientes es una etiqueta HTML válida?",
+            "opciones": ["<div>", "<container>", "<box>", "<section>"],
+            "respuesta_correcta": "<div>"
+          },
+          {
+            "id": 2,
+            "pregunta": "¿Qué atributo se usa en una etiqueta <img> para especificar la URL de la imagen?",
+            "opciones": ["src", "href", "alt", "link"],
+            "respuesta_correcta": "src"
+          },
+          {
+            "id": 3,
+            "pregunta": "¿Cuál de las siguientes etiquetas HTML se usa para definir un enlace?",
+            "opciones": ["<a>", "<link>", "<nav>", "<url>"],
+            "respuesta_correcta": "<a>"
+          },
+          {
+            "id": 4,
+            "pregunta": "¿Qué etiqueta se utiliza para definir un párrafo en HTML?",
+            "opciones": ["<p>", "<paragraph>", "<text>", "<pr>"],
+            "respuesta_correcta": "<p>"
+          },
+          {
+            "id": 5,
+            "pregunta": "¿Cuál de las siguientes etiquetas HTML se usa para incluir un comentario?",
+            "opciones": [
+              "<!-- Comentario -->",
+              "<comment>",
+              "<# Comentario #>",
+              "<-- Comentario -->"
+            ],
+            "respuesta_correcta": "<!-- Comentario -->"
+          },
+          {
+            "id": 6,
+            "pregunta": "¿Qué etiqueta HTML se utiliza para crear una tabla?",
+            "opciones": ["<table>", "<tab>", "<data>", "<chart>"],
+            "respuesta_correcta": "<table>"
+          }
+        ],
+        "ordenar_codigo": [
+          {
+            "id": 7,
+            "pregunta": "Ordena correctamente las siguientes líneas de código para crear una lista desordenada en HTML:",
+            "opciones": [
+              "3. <ul>",
+              "1. <li>Elemento 1</li>",
+              "2. <li>Elemento 2</li>",
+              "4. </ul>"
+            ],
+            "respuesta_correcta": [
+              "3. <ul>",
+              "1. <li>Elemento 1</li>",
+              "2. <li>Elemento 2</li>",
+              "4. </ul>"
+            ]
+          },
+          {
+            "id": 8,
+            "pregunta": "Ordena las siguientes líneas de código para crear una estructura básica de documento HTML:",
+            "opciones": ["3. </body>", "1. <html>", "4. </html>", "2. <body>"],
+            "respuesta_correcta": [
+              "1. <html>",
+              "2. <body>",
+              "3. </body>",
+              "4. </html>"
+            ]
+          },
+          {
+            "id": 9,
+            "pregunta": "Ordena las siguientes líneas de código para incluir un archivo CSS en un documento HTML:",
+            "opciones": [
+              "2. <link rel='stylesheet' href='estilos.css'>",
+              "1. <head>",
+              "3. </head>"
+            ],
+            "respuesta_correcta": [
+              "1. <head>",
+              "2. <link rel='stylesheet' href='estilos.css'>",
+              "3. </head>"
+            ]
+          },
+          {
+            "id": 10,
+            "pregunta": "Ordena las líneas para crear un formulario con un campo de texto y un botón de envío en HTML:",
+            "opciones": [
+              "3. <input type='text' name='nombre'>",
+              "1. <form>",
+              "4. </form>",
+              "2. <button type='submit'>Enviar</button>"
+            ],
+            "respuesta_correcta": [
+              "1. <form>",
+              "3. <input type='text' name='nombre'>",
+              "2. <button type='submit'>Enviar</button>",
+              "4. </form>"
+            ]
+          },
+          {
+            "id": 11,
+            "pregunta": "Ordena las líneas para crear una estructura básica de un documento HTML5 con un encabezado:",
+            "opciones": [
+              "2. <header>",
+              "1. <!DOCTYPE html>",
+              "3. </header>",
+              "4. <html>",
+              "5. </html>"
+            ],
+            "respuesta_correcta": [
+              "1. <!DOCTYPE html>",
+              "4. <html>",
+              "2. <header>",
+              "3. </header>",
+              "5. </html>"
+            ]
+          },
+          {
+            "id": 12,
+            "pregunta": "Ordena las líneas de código para definir un documento HTML con una lista ordenada:",
+            "opciones": [
+              "2. <ol>",
+              "1. <html>",
+              "4. </ol>",
+              "3. <li>Elemento 1</li>",
+              "5. </html>"
+            ],
+            "respuesta_correcta": [
+              "1. <html>",
+              "2. <ol>",
+              "3. <li>Elemento 1</li>",
+              "4. </ol>",
+              "5. </html>"
+            ]
+          }
+        ],
+        "seleccionar_imagen_correcta": [
+          {
+            "id": 13,
+            "pregunta": "¿Cuál de las siguientes imágenes muestra un logo de HTML?",
+            "opciones": [
+              "html_logo1.png",
+              "html_logo2.png",
+              "html_logo3.png",
+              "html_logo4.png"
+            ],
+            "respuesta_correcta": "html_logo2.png"
+          },
+          {
+            "id": 14,
+            "pregunta": "¿Cuál es la imagen que representa una etiqueta HTML básica?",
+            "opciones": [
+              "html_tag1.png",
+              "html_tag2.png",
+              "html_tag3.png",
+              "html_tag4.png"
+            ],
+            "respuesta_correcta": "html_tag1.png"
+          },
+          {
+            "id": 15,
+            "pregunta": "Selecciona la imagen que muestra la estructura de un documento HTML5:",
+            "opciones": [
+              "html_structure1.png",
+              "html_structure2.png",
+              "html_structure3.png",
+              "html_structure4.png"
+            ],
+            "respuesta_correcta": "html_structure3.png"
+          },
+          {
+            "id": 16,
+            "pregunta": "¿Cuál de estas imágenes representa un formulario HTML?",
+            "opciones": [
+              "html_form1.png",
+              "html_form2.png",
+              "html_form3.png",
+              "html_form4.png"
+            ],
+            "respuesta_correcta": "html_form2.png"
+          },
+          {
+            "id": 17,
+            "pregunta": "¿Cuál de estas imágenes muestra una etiqueta de imagen en HTML?",
+            "opciones": [
+              "html_img1.png",
+              "html_img2.png",
+              "html_img3.png",
+              "html_img4.png"
+            ],
+            "respuesta_correcta": "html_img1.png"
+          },
+          {
+            "id": 18,
+            "pregunta": "Selecciona la imagen que muestra un ejemplo de una lista desordenada en HTML:",
+            "opciones": [
+              "html_list1.png",
+              "html_list2.png",
+              "html_list3.png",
+              "html_list4.png"
+            ],
+            "respuesta_correcta": "html_list2.png"
+          }
+        ]
+      }
+    },
+    "CSS": {
+      "opciones_unica_respuesta": [
+        {
+          "id": 1,
+          "pregunta": "¿Cuál es la propiedad de CSS que se usa para cambiar el color del texto?",
+          "opciones": ["color", "background", "font", "text-align"],
+          "respuesta_correcta": "color"
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué propiedad de CSS se utiliza para ajustar el margen de un elemento?",
+          "opciones": ["margin", "padding", "border", "spacing"],
+          "respuesta_correcta": "margin"
+        },
+        {
+          "id": 3,
+          "pregunta": "¿Cuál de las siguientes propiedades se utiliza para cambiar el tamaño de fuente en CSS?",
+          "opciones": [
+            "font-size",
+            "font-weight",
+            "line-height",
+            "text-transform"
+          ],
+          "respuesta_correcta": "font-size"
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué propiedad se usa para establecer el color de fondo de un elemento?",
+          "opciones": [
+            "background-color",
+            "color",
+            "border-color",
+            "text-color"
+          ],
+          "respuesta_correcta": "background-color"
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Cuál de las siguientes propiedades se utiliza para alinear el texto en CSS?",
+          "opciones": [
+            "text-align",
+            "text-indent",
+            "line-height",
+            "letter-spacing"
+          ],
+          "respuesta_correcta": "text-align"
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Qué propiedad CSS se usa para establecer el estilo de borde de un elemento?",
+          "opciones": [
+            "border-style",
+            "border-width",
+            "border-color",
+            "border-radius"
+          ],
+          "respuesta_correcta": "border-style"
+        }
+      ],
+      "ordenar_codigo": [
+        {
+          "id": 7,
+          "pregunta": "Ordena las siguientes líneas de código para cambiar el color de fondo a azul en CSS:",
+          "opciones": ["2. background-color: blue;", "1. body {", "3. }"],
+          "respuesta_correcta": [
+            "1. body {",
+            "2. background-color: blue;",
+            "3. }"
+          ]
+        },
+        {
+          "id": 8,
+          "pregunta": "Ordena las siguientes líneas de código para aplicar un margen de 10px a un párrafo en CSS:",
+          "opciones": ["2. margin: 10px;", "1. p {", "3. }"],
+          "respuesta_correcta": ["1. p {", "2. margin: 10px;", "3. }"]
+        },
+        {
+          "id": 9,
+          "pregunta": "Ordena las líneas de código para establecer un color de texto en CSS:",
+          "opciones": ["3. }", "1. h1 {", "2. color: red;"],
+          "respuesta_correcta": ["1. h1 {", "2. color: red;", "3. }"]
+        },
+        {
+          "id": 10,
+          "pregunta": "Ordena las líneas de código para crear un borde de 1px sólido en CSS:",
+          "opciones": ["2. border: 1px solid black;", "1. div {", "3. }"],
+          "respuesta_correcta": [
+            "1. div {",
+            "2. border: 1px solid black;",
+            "3. }"
+          ]
+        },
+        {
+          "id": 11,
+          "pregunta": "Ordena las líneas de código para ajustar el espacio entre palabras en CSS:",
+          "opciones": ["2. word-spacing: 5px;", "1. p {", "3. }"],
+          "respuesta_correcta": ["1. p {", "2. word-spacing: 5px;", "3. }"]
+        },
+        {
+          "id": 12,
+          "pregunta": "Ordena las líneas de código para definir una fuente en CSS:",
+          "opciones": ["2. font-family: Arial, sans-serif;", "1. h2 {", "3. }"],
+          "respuesta_correcta": [
+            "1. h2 {",
+            "2. font-family: Arial, sans-serif;",
+            "3. }"
+          ]
+        }
+      ],
+      "seleccionar_imagen_correcta": [
+        {
+          "id": 13,
+          "pregunta": "¿Cuál de las siguientes imágenes muestra un logo de CSS?",
+          "opciones": [
+            "css_logo1.png",
+            "css_logo2.png",
+            "css_logo3.png",
+            "css_logo4.png"
+          ],
+          "respuesta_correcta": "css_logo3.png"
+        },
+        {
+          "id": 14,
+          "pregunta": "¿Cuál es la imagen que representa una propiedad CSS para el color de fondo?",
+          "opciones": [
+            "css_background1.png",
+            "css_background2.png",
+            "css_background3.png",
+            "css_background4.png"
+          ],
+          "respuesta_correcta": "css_background2.png"
+        },
+        {
+          "id": 15,
+          "pregunta": "Selecciona la imagen que muestra un ejemplo de un selector CSS:",
+          "opciones": [
+            "css_selector1.png",
+            "css_selector2.png",
+            "css_selector3.png",
+            "css_selector4.png"
+          ],
+          "respuesta_correcta": "css_selector1.png"
+        },
+        {
+          "id": 16,
+          "pregunta": "¿Cuál de estas imágenes representa un estilo de texto en CSS?",
+          "opciones": [
+            "css_text1.png",
+            "css_text2.png",
+            "css_text3.png",
+            "css_text4.png"
+          ],
+          "respuesta_correcta": "css_text3.png"
+        },
+        {
+          "id": 17,
+          "pregunta": "¿Cuál de estas imágenes muestra un ejemplo de uso de la propiedad `border` en CSS?",
+          "opciones": [
+            "css_border1.png",
+            "css_border2.png",
+            "css_border3.png",
+            "css_border4.png"
+          ],
+          "respuesta_correcta": "css_border2.png"
+        },
+        {
+          "id": 18,
+          "pregunta": "Selecciona la imagen que muestra una caja de modelo en CSS:",
+          "opciones": [
+            "css_box1.png",
+            "css_box2.png",
+            "css_box3.png",
+            "css_box4.png"
+          ],
+          "respuesta_correcta": "css_box1.png"
+        }
+      ]
+    },
+    "JavaScript": {
+      "opciones_unica_respuesta": [
+        {
+          "id": 1,
+          "pregunta": "¿Cuál de los siguientes métodos se usa para agregar un elemento al final de un array?",
+          "opciones": ["push()", "pop()", "shift()", "unshift()"],
+          "respuesta_correcta": "push()"
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué método se usa en JavaScript para convertir una cadena a minúsculas?",
+          "opciones": [
+            "toLowerCase()",
+            "toUpperCase()",
+            "toString()",
+            "charAt()"
+          ],
+          "respuesta_correcta": "toLowerCase()"
+        },
+        {
+          "id": 3,
+          "pregunta": "¿Cuál de los siguientes es un operador de comparación en JavaScript?",
+          "opciones": ["==", "&&", "||", "!"],
+          "respuesta_correcta": "=="
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué función se usa para mostrar una alerta en JavaScript?",
+          "opciones": ["alert()", "prompt()", "console.log()", "confirm()"],
+          "respuesta_correcta": "alert()"
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Cuál de las siguientes palabras clave se usa para declarar una variable en JavaScript?",
+          "opciones": ["var", "let", "const", "Todas las anteriores"],
+          "respuesta_correcta": "Todas las anteriores"
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Cuál de los siguientes es un método para iterar sobre un array en JavaScript?",
+          "opciones": [
+            "forEach()",
+            "map()",
+            "filter()",
+            "Todas las anteriores"
+          ],
+          "respuesta_correcta": "Todas las anteriores"
+        }
+      ],
+      "ordenar_codigo": [
+        {
+          "id": 7,
+          "pregunta": "Ordena las siguientes líneas para crear una función que imprima un mensaje en la consola en JavaScript:",
+          "opciones": [
+            "2. console.log('Hola Mundo');",
+            "1. function imprimirMensaje() {",
+            "3. }"
+          ],
+          "respuesta_correcta": [
+            "1. function imprimirMensaje() {",
+            "2. console.log('Hola Mundo');",
+            "3. }"
+          ]
+        },
+        {
+          "id": 8,
+          "pregunta": "Ordena las líneas para declarar una variable y asignarle un valor en JavaScript:",
+          "opciones": [
+            "2. let nombre = 'Juan';",
+            "1. let nombre;",
+            "3. console.log(nombre);"
+          ],
+          "respuesta_correcta": [
+            "1. let nombre;",
+            "2. let nombre = 'Juan';",
+            "3. console.log(nombre);"
+          ]
+        },
+        {
+          "id": 9,
+          "pregunta": "Ordena las siguientes líneas para definir un array y agregar un elemento en JavaScript:",
+          "opciones": [
+            "2. miArray.push('Nuevo Elemento');",
+            "1. let miArray = [];",
+            "3. console.log(miArray);"
+          ],
+          "respuesta_correcta": [
+            "1. let miArray = [];",
+            "2. miArray.push('Nuevo Elemento');",
+            "3. console.log(miArray);"
+          ]
+        },
+        {
+          "id": 10,
+          "pregunta": "Ordena las líneas para crear un bucle `for` que imprime números del 1 al 5 en JavaScript:",
+          "opciones": [
+            "2. console.log(i);",
+            "1. for (let i = 1; i <= 5; i++) {",
+            "3. }"
+          ],
+          "respuesta_correcta": [
+            "1. for (let i = 1; i <= 5; i++) {",
+            "2. console.log(i);",
+            "3. }"
+          ]
+        },
+        {
+          "id": 11,
+          "pregunta": "Ordena las líneas para definir un objeto con propiedades en JavaScript:",
+          "opciones": [
+            "2. edad: 30,",
+            "1. let persona = {",
+            "3. nombre: 'Ana',",
+            "4. }"
+          ],
+          "respuesta_correcta": [
+            "1. let persona = {",
+            "3. nombre: 'Ana',",
+            "2. edad: 30,",
+            "4. }"
+          ]
+        },
+        {
+          "id": 12,
+          "pregunta": "Ordena las líneas de código para hacer una solicitud HTTP con `fetch` en JavaScript:",
+          "opciones": [
+            "2. .then(response => response.json())",
+            "1. fetch('url')",
+            "3. .then(data => console.log(data))"
+          ],
+          "respuesta_correcta": [
+            "1. fetch('url')",
+            "2. .then(response => response.json())",
+            "3. .then(data => console.log(data))"
+          ]
+        }
+      ],
+      "seleccionar_imagen_correcta": [
+        {
+          "id": 13,
+          "pregunta": "¿Cuál de las siguientes imágenes muestra un logo de JavaScript?",
+          "opciones": [
+            "js_logo1.png",
+            "js_logo2.png",
+            "js_logo3.png",
+            "js_logo4.png"
+          ],
+          "respuesta_correcta": "js_logo3.png"
+        },
+        {
+          "id": 14,
+          "pregunta": "¿Cuál es la imagen que representa un método de array en JavaScript?",
+          "opciones": [
+            "js_array1.png",
+            "js_array2.png",
+            "js_array3.png",
+            "js_array4.png"
+          ],
+          "respuesta_correcta": "js_array2.png"
+        },
+        {
+          "id": 15,
+          "pregunta": "Selecciona la imagen que muestra un ejemplo de una función en JavaScript:",
+          "opciones": [
+            "js_function1.png",
+            "js_function2.png",
+            "js_function3.png",
+            "js_function4.png"
+          ],
+          "respuesta_correcta": "js_function1.png"
+        },
+        {
+          "id": 16,
+          "pregunta": "¿Cuál de estas imágenes representa un operador en JavaScript?",
+          "opciones": [
+            "js_operator1.png",
+            "js_operator2.png",
+            "js_operator3.png",
+            "js_operator4.png"
+          ],
+          "respuesta_correcta": "js_operator3.png"
+        },
+        {
+          "id": 17,
+          "pregunta": "¿Cuál de estas imágenes muestra un ejemplo de un objeto en JavaScript?",
+          "opciones": [
+            "js_object1.png",
+            "js_object2.png",
+            "js_object3.png",
+            "js_object4.png"
+          ],
+          "respuesta_correcta": "js_object1.png"
+        },
+        {
+          "id": 18,
+          "pregunta": "Selecciona la imagen que muestra un uso típico del método `fetch` en JavaScript:",
+          "opciones": [
+            "js_fetch1.png",
+            "js_fetch2.png",
+            "js_fetch3.png",
+            "js_fetch4.png"
+          ],
+          "respuesta_correcta": "js_fetch2.png"
+        }
+      ]
+    },
+    "UX": {
+      "opciones_unica_respuesta": [
+        {
+          "id": 1,
+          "pregunta": "¿Cuál es el objetivo principal del diseño UX?",
+          "opciones": [
+            "Mejorar la usabilidad y la experiencia del usuario",
+            "Crear gráficos atractivos",
+            "Optimizar el rendimiento del servidor",
+            "Aumentar el tráfico web"
+          ],
+          "respuesta_correcta": "Mejorar la usabilidad y la experiencia del usuario"
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué herramienta se usa comúnmente para crear prototipos de interfaces de usuario?",
+          "opciones": ["Figma", "Photoshop", "Excel", "Word"],
+          "respuesta_correcta": "Figma"
+        },
+        {
+          "id": 3,
+          "pregunta": "¿Cuál de las siguientes es una técnica para mejorar la accesibilidad en el diseño web?",
+          "opciones": [
+            "Uso de texto alternativo en imágenes",
+            "Uso de colores brillantes",
+            "Reducir el contraste de texto",
+            "Ocultar texto de usuarios con discapacidad"
+          ],
+          "respuesta_correcta": "Uso de texto alternativo en imágenes"
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué es un 'wireframe' en el contexto de UX?",
+          "opciones": [
+            "Un boceto básico de la interfaz de usuario",
+            "Un modelo en 3D del producto",
+            "Una animación de alta fidelidad",
+            "Un código de implementación"
+          ],
+          "respuesta_correcta": "Un boceto básico de la interfaz de usuario"
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Cuál de las siguientes métricas se usa para evaluar la usabilidad de una interfaz?",
+          "opciones": [
+            "Tiempo de tarea",
+            "Número de visitas",
+            "Tasa de clics",
+            "Número de páginas vistas"
+          ],
+          "respuesta_correcta": "Tiempo de tarea"
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Qué principio de diseño UX se refiere a cómo los elementos de una interfaz están organizados y agrupados?",
+          "opciones": [
+            "Principio de jerarquía",
+            "Principio de consistencia",
+            "Principio de feedback",
+            "Principio de usabilidad"
+          ],
+          "respuesta_correcta": "Principio de jerarquía"
+        }
+      ],
+      "ordenar_codigo": [
+        {
+          "id": 7,
+          "pregunta": "Ordena los pasos para realizar una prueba de usabilidad:",
+          "opciones": [
+            "2. Realizar la prueba con usuarios reales",
+            "1. Definir objetivos y tareas",
+            "3. Analizar los resultados",
+            "4. Iterar y hacer mejoras"
+          ],
+          "respuesta_correcta": [
+            "1. Definir objetivos y tareas",
+            "2. Realizar la prueba con usuarios reales",
+            "3. Analizar los resultados",
+            "4. Iterar y hacer mejoras"
+          ]
+        },
+        {
+          "id": 8,
+          "pregunta": "Ordena los pasos para crear un prototipo interactivo:",
+          "opciones": [
+            "2. Diseñar los wireframes",
+            "1. Crear bocetos iniciales",
+            "3. Convertir wireframes en prototipo interactivo",
+            "4. Obtener feedback de usuarios"
+          ],
+          "respuesta_correcta": [
+            "1. Crear bocetos iniciales",
+            "2. Diseñar los wireframes",
+            "3. Convertir wireframes en prototipo interactivo",
+            "4. Obtener feedback de usuarios"
+          ]
+        },
+        {
+          "id": 9,
+          "pregunta": "Ordena los pasos para realizar una investigación de usuarios:",
+          "opciones": [
+            "2. Recolectar datos",
+            "1. Definir objetivos de investigación",
+            "3. Analizar datos",
+            "4. Presentar hallazgos"
+          ],
+          "respuesta_correcta": [
+            "1. Definir objetivos de investigación",
+            "2. Recolectar datos",
+            "3. Analizar datos",
+            "4. Presentar hallazgos"
+          ]
+        },
+        {
+          "id": 10,
+          "pregunta": "Ordena los pasos para realizar un análisis de competencia:",
+          "opciones": [
+            "2. Investigar competidores",
+            "1. Definir criterios de evaluación",
+            "3. Comparar y analizar resultados",
+            "4. Identificar oportunidades de mejora"
+          ],
+          "respuesta_correcta": [
+            "1. Definir criterios de evaluación",
+            "2. Investigar competidores",
+            "3. Comparar y analizar resultados",
+            "4. Identificar oportunidades de mejora"
+          ]
+        },
+        {
+          "id": 11,
+          "pregunta": "Ordena los pasos para realizar un test A/B:",
+          "opciones": [
+            "2. Crear dos versiones (A y B)",
+            "1. Definir hipótesis y métricas",
+            "3. Implementar pruebas en usuarios",
+            "4. Analizar resultados y tomar decisiones"
+          ],
+          "respuesta_correcta": [
+            "1. Definir hipótesis y métricas",
+            "2. Crear dos versiones (A y B)",
+            "3. Implementar pruebas en usuarios",
+            "4. Analizar resultados y tomar decisiones"
+          ]
+        },
+        {
+          "id": 12,
+          "pregunta": "Ordena los pasos para diseñar una interfaz de usuario accesible:",
+          "opciones": [
+            "2. Definir requerimientos de accesibilidad",
+            "1. Investigar y entender las necesidades de usuarios con discapacidades",
+            "3. Aplicar principios de diseño accesible",
+            "4. Probar la interfaz con usuarios reales"
+          ],
+          "respuesta_correcta": [
+            "1. Investigar y entender las necesidades de usuarios con discapacidades",
+            "2. Definir requerimientos de accesibilidad",
+            "3. Aplicar principios de diseño accesible",
+            "4. Probar la interfaz con usuarios reales"
+          ]
+        }
+      ],
+      "seleccionar_imagen_correcta": [
+        {
+          "id": 13,
+          "pregunta": "¿Cuál de las siguientes imágenes muestra un ejemplo de un prototipo de alta fidelidad?",
+          "opciones": [
+            "ux_prototype1.png",
+            "ux_prototype2.png",
+            "ux_prototype3.png",
+            "ux_prototype4.png"
+          ],
+          "respuesta_correcta": "ux_prototype3.png"
+        },
+        {
+          "id": 14,
+          "pregunta": "¿Cuál de las imágenes representa un wireframe en UX?",
+          "opciones": [
+            "ux_wireframe1.png",
+            "ux_wireframe2.png",
+            "ux_wireframe3.png",
+            "ux_wireframe4.png"
+          ],
+          "respuesta_correcta": "ux_wireframe2.png"
+        },
+        {
+          "id": 15,
+          "pregunta": "Selecciona la imagen que muestra una herramienta de prototipado en UX:",
+          "opciones": [
+            "ux_tool1.png",
+            "ux_tool2.png",
+            "ux_tool3.png",
+            "ux_tool4.png"
+          ],
+          "respuesta_correcta": "ux_tool1.png"
+        },
+        {
+          "id": 16,
+          "pregunta": "¿Cuál de estas imágenes muestra un ejemplo de una prueba de usabilidad?",
+          "opciones": [
+            "ux_usability1.png",
+            "ux_usability2.png",
+            "ux_usability3.png",
+            "ux_usability4.png"
+          ],
+          "respuesta_correcta": "ux_usability1.png"
+        },
+        {
+          "id": 17,
+          "pregunta": "¿Cuál de estas imágenes muestra un análisis de competencia?",
+          "opciones": [
+            "ux_competition1.png",
+            "ux_competition2.png",
+            "ux_competition3.png",
+            "ux_competition4.png"
+          ],
+          "respuesta_correcta": "ux_competition3.png"
+        },
+        {
+          "id": 18,
+          "pregunta": "Selecciona la imagen que muestra una técnica de accesibilidad en diseño UX:",
+          "opciones": [
+            "ux_accessibility1.png",
+            "ux_accessibility2.png",
+            "ux_accessibility3.png",
+            "ux_accessibility4.png"
+          ],
+          "respuesta_correcta": "ux_accessibility2.png"
+        }
+      ]
+    }
+  }
+}
