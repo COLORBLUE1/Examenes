@@ -17,7 +17,7 @@ div:first-child {
   padding: 40px;
 }
 div:first-child article img {
-  width: clamp(18.75rem, 9.821rem + 23.81vw, 31.25rem);
+  width: clamp(22rem, 11.607rem + 35.714vw, 43.75rem);
 }
 
 /*# sourceMappingURL=Splashscreen.css.map */
