@@ -236,26 +236,58 @@ nav li:hover img {
     font-family: "inter";
     padding: 0;
     margin: 0;
+    height: 100vh;
   }
   #home-section,
   #estadistica-cuenta {
     margin-bottom: 30px;
-    margin-top: 240px;
-    height: 50vh;
-    max-width: 80vw;
+    margin-top: 100px;
+    max-width: 70vw;
   }
   #home-section .categoria strong,
   #estadistica-cuenta .categoria strong {
     position: relative;
     top: 30px;
   }
+  #home-section .contenedor {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px;
+    justify-content: center;
+    padding: 100px 50px;
+    align-items: center;
+  }
+  .html {
+    grid-column: 2/2;
+    grid-row: 2/1;
+  }
+  .css,
+  .ux {
+    grid-row: 3/2;
+  }
+  .ux {
+    grid-column: 3/3;
+  }
+  .figma {
+    grid-column: 3/3;
+  }
+  .figma,
+  .js {
+    grid-row: 3;
+  }
   #cuenta-section {
     margin-bottom: 30px;
-    margin-top: 240px;
+    margin-top: 50px;
     height: 80vh;
   }
   #cuenta-section .fotoperfil {
     display: grid;
+  }
+  #cuenta-section .contenedor .logout {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
   }
   nav {
     margin: 0;
@@ -267,7 +299,10 @@ nav li:hover img {
     border-radius: 0;
     padding: 0;
     margin: 0;
-    height: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
