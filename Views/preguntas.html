@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="/Assets/styles/css/preguntas.css" />
-    <link rel="stylesheet" href="/Assets/styles/css/font.css" />
-    <link
-      rel="shortcut icon"
-      href="/Assets/Archivos/img/icon.png"
-      type="image/png"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preguntas</title>
-    <style>
-      .progreso {
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="/Assets/styles/css/preguntas.css" />
+  <link rel="stylesheet" href="/Assets/styles/css/font.css" />
+  <link
+    rel="shortcut icon"
+    href="/Assets/Archivos/img/icon.png"
+    type="image/png"
+  />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preguntas</title>
+  <style>
+    .progreso {
         width: 100%;
         background-color: #f3f3f3;
         border: 1px solid #ddd;
@@ -27,6 +27,7 @@
       .progreso-barra {
         height: 100%;
         background-color: #4caf50;
+        border-radius: 20px;
         width: 0;
         position: absolute;
         top: 0;
@@ -42,42 +43,80 @@
         height: 100px;
         cursor: pointer;
       }
-    </style>
-  </head>
-  <body>
+      .contenedor-respuestas button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      .contenedor-respuestas button:hover {
+        background-color: #ddd;
+      }
+      .contenedor-respuestas button:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+      }
+      .contenedor-botones {
+        margin-top: 20px;
+      }
+      .contenedor-botones button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      .contenedor-botones button:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+      }
+  </style>
+</head>
+<body>
     <section id="home-section">
-      <div class="contenedor-nav">
-        <div class="close" id="close">x</div>
-        <div class="progreso">
-          <div class="progreso-barra" id="progreso-barra"></div>
+        <div class="contenedor-nav">
+          <div class="close" id="close" onclick="closebotton()">X</div>
+          <div class="progreso">
+            <div class="progreso-barra" id="progreso-barra"></div>
+          </div>
+          <div class="vidas">
+            <figure>
+              <img src="/Assets/Archivos/img/corazon.svg" alt="Vidas" />
+              <span id="vidas">4</span>
+            </figure>
+          </div>
         </div>
-        <div class="vidas">
+    
+        <div class="contenedor-preguntas">
           <figure>
-            <img src="/Assets/Archivos/img/corazon.svg" alt="" /><span
-              onclick="close()"
-              id="vidas"
-              >4</span
-            >
+            <div class="progreso-circular">
+              <img id="pregunta-imagen" src="" alt="Imagen de la pregunta" />
+              <div class="barra-progreso-circular" id="barra-progreso-circular"></div>
+            </div>
           </figure>
+          <span id="pregunta-texto"></span>
         </div>
-      </div>
+    
+        <div class="contenedor-respuestas" id="contenedor-respuestas">
+          <!-- Los botones de respuesta se generarán dinámicamente aquí -->
+        </div>
+    
+        <div class="contenedor-botones">
+          <button id="comprobar-btn" disabled>Comprobar</button>
+        </div>
+      </section>
 
-      <div class="contenedor-preguntas">
-        <figure>
-          <img
-            id="pregunta-imagen"
-            src="/Assets/Archivos/img/personajes/personaje-1.svg"
-            alt=""
-          />
-        </figure>
-        <span id="pregunta-texto"></span>
-      </div>
-
-      <div class="contenedor-respuestas" id="contenedor-respuestas">
-        <!-- Los botones de respuesta se generarán dinámicamente aquí -->
-      </div>
-    </section>
-
-    <script src="/Controlador/preguntas-data.js"></script>
-  </body>
+  <script src="/Controlador/preguntas-data.js"></script>
+</body>
 </html>

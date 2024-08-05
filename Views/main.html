@@ -19,32 +19,39 @@
   <body>
     <!-- Section main -->
 
-    <section id="home-section">
+    <section
+      id="home-section"
+      class="animate__animated animate__fadeInUpBig section active"
+    >
       <span>Practica tus conocimientos en la categoría que prefieras</span>
 
       <div class="contenedor">
         <div class="categoria">
-          <a href="#" data-tema="HTML"
-            ><img src="/Assets/Archivos/img/html.svg" alt="HTML"
-          /></a>
+          <a href="#" data-tema="HTML">
+            <div class="barra-progreso" id="progreso-html"></div>
+            <img src="/Assets/Archivos/img/html.svg" alt="HTML" />
+          </a>
           <strong>HTML</strong>
         </div>
         <div class="categoria">
-          <a href="#" data-tema="CSS"
-            ><img src="/Assets/Archivos/img/css.svg" alt="CSS"
-          /></a>
+          <a href="#" data-tema="CSS">
+            <div class="barra-progreso" id="progreso-css"></div>
+            <img src="/Assets/Archivos/img/css.svg" alt="CSS" />
+          </a>
           <strong>CSS</strong>
         </div>
         <div class="categoria">
-          <a href="#" data-tema="JavaScript"
-            ><img src="/Assets/Archivos/img/js.svg" alt="JS"
-          /></a>
+          <a href="#" data-tema="JavaScript">
+            <div class="barra-progreso" id="progreso-javascript"></div>
+            <img src="/Assets/Archivos/img/js.svg" alt="JS" />
+          </a>
           <strong>JS</strong>
         </div>
         <div class="categoria">
-          <a href="#" data-tema="UX"
-            ><img src="/Assets/Archivos/img/ux.svg" alt="UX"
-          /></a>
+          <a href="#" data-tema="UX">
+            <div class="barra-progreso" id="progreso-ux"></div>
+            <img src="/Assets/Archivos/img/ux.svg" alt="UX" />
+          </a>
           <strong>UX</strong>
         </div>
       </div>
@@ -59,20 +66,30 @@
           window.location.href = "/Views/preguntas.html";
         });
       });
+
+      function cargarProgreso() {
+        const temas = ["HTML", "CSS", "JavaScript", "UX"];
+        temas.forEach((tema) => {
+          const progreso = localStorage.getItem(`${tema}-progreso`);
+          if (progreso !== null) {
+            const barraProgreso = document.getElementById(
+              `progreso-${tema.toLowerCase()}`
+            );
+            if (barraProgreso) {
+              barraProgreso.style.background = `conic-gradient(#4caf50 ${progreso}%, #f3f3f3 ${progreso}%)`;
+            }
+          }
+        });
+      }
+
+      // Cargar progreso al cargar la página
+      cargarProgreso();
     </script>
 
-    <section
-      id="estadisticas-section"
-      class="animate__animated animate__fadeInRight section"
-    >
-      <h1>Hola</h1>
-    </section>
-
     <!-- Section Estadistica -->
-
     <section
       id="estadisticas-section"
-      class="animate__animated animate__fadeInRight section"
+      class="animate__animated animate__fadeInDown section"
     >
       <h1>Hola</h1>
     </section>
@@ -80,7 +97,7 @@
     <!-- Section Perfil -->
     <section
       id="cuenta-section"
-      class="animate__animated animate__fadeInLeft section"
+      class="animate__animated animate__fadeInDown section"
     >
       <div class="contenedor">
         <h2>Perfil</h2>
@@ -110,16 +127,17 @@
             placeholder="Ingrese su correo electrónico"
           />
 
-          <!-- Campo para cambiar la foto de perfil -->
-          <label for="editar_foto">Foto de perfil:</label>
-          <input type="file" id="editar_foto" accept="image/*" />
-          <img
-            id="fotoPreview"
-            src=""
-            alt="Vista previa de la foto"
-            style="display: none; max-width: 100px; margin-top: 10px"
-          />
-
+          <div class="fotoperfil">
+            <!-- Campo para cambiar la foto de perfil -->
+            <label for="editar_foto">Foto de perfil:</label>
+            <input type="file" id="editar_foto" accept="image/*" />
+            <img
+              id="fotoPreview"
+              src=""
+              alt="Vista previa de la foto"
+              style="display: none; max-width: 100px; margin-top: 10px"
+            />
+          </div>
           <button type="button" id="guardarCambios">Guardar Cambios</button>
         </div>
 
@@ -127,7 +145,6 @@
           <a href="/Views/login.html">Cerrar Sesión</a>
         </div>
       </div>
-      <script src="/Assets/scripts/perfil.js"></script>
     </section>
 
     <nav>

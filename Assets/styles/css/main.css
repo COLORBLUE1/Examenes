@@ -4,6 +4,8 @@ body {
   background: -webkit-linear-gradient(90deg, #6b377c, #009ee3, #29e665);
   background: linear-gradient(90deg, #6b377c, #009ee3, #29e665);
   font-family: "inter";
+  padding: 0;
+  margin: 0;
 }
 
 .section {
@@ -25,16 +27,14 @@ li {
 
 #home-section {
   background: #16161a;
-  display: grid;
   position: relative;
   margin: auto;
+  margin-top: 30px;
   margin-bottom: 30px;
   padding: 50px;
   max-width: 50vw;
   width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  height: 70vh;
   border-radius: 15px;
 }
 #home-section span {
@@ -48,18 +48,44 @@ li {
   gap: 50px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 100px 0;
 }
 #home-section .contenedor .categoria {
+  position: relative;
   display: grid;
   justify-items: center;
 }
 #home-section .contenedor .categoria img {
-  outline: 10px #009ee3 solid;
   border-radius: 50%;
   padding: 8px;
   margin: 10px;
+  margin-bottom: -10px;
+  margin-top: 15px;
   width: clamp(2rem, -0.268rem + 10.714vw, 6.5rem);
   height: clamp(3.125rem, 0.893rem + 5.952vw, 6.25rem);
+  position: relative;
+  z-index: 1;
+}
+#home-section .barra-progreso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#4caf50 0%, #f3f3f3 0%);
+  z-index: 0;
+}
+#home-section .barra-progreso::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: #16161a;
+  transform: translate(-50%, -50%);
 }
 
 nav {
@@ -104,9 +130,8 @@ nav li:hover img {
   padding: 50px;
   max-width: 50vw;
   width: 100%;
-  height: auto;
+  height: 82vh;
   border-radius: 15px;
-  /* Estilos para el perfil */
 }
 #cuenta-section .perfil_datos {
   margin-bottom: 20px;
@@ -152,8 +177,9 @@ nav li:hover img {
 #cuenta-section .perfil_editar button:hover {
   background-color: #45a049; /* Verde más oscuro */
 }
-#cuenta-section .contenedor h2 {
-  margin-bottom: 100px;
+#cuenta-section .fotoperfil {
+  display: flex;
+  justify-content: center;
 }
 #cuenta-section .contenedor .perfil_datos {
   display: flex;
@@ -200,6 +226,52 @@ nav li:hover img {
   width: 100%;
   height: 100vh;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Estilos para teléfonos móviles */
+  body {
+    color: #fff;
+    background: #16161a;
+    font-family: "inter";
+    padding: 0;
+    margin: 0;
+  }
+  #home-section,
+  #estadistica-cuenta {
+    margin-bottom: 30px;
+    margin-top: 240px;
+    height: 50vh;
+    max-width: 80vw;
+  }
+  #home-section .categoria strong,
+  #estadistica-cuenta .categoria strong {
+    position: relative;
+    top: 30px;
+  }
+  #cuenta-section {
+    margin-bottom: 30px;
+    margin-top: 240px;
+    height: 80vh;
+  }
+  #cuenta-section .fotoperfil {
+    display: grid;
+  }
+  nav {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+  }
+  nav ul {
+    background: #232e35;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tabletas */
 }
 
 /*# sourceMappingURL=main.css.map */

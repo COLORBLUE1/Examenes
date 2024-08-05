@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mostrar la sección inicial al cargar la página
-    showSection('home-section'); 
+    showSection('home'); // Asegúrate de que el ID de la sección coincida
 
     // Añadir eventos de clic a los elementos de la lista
     document.querySelectorAll('ul li').forEach(li => {
