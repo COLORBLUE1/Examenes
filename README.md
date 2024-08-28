@@ -13,9 +13,9 @@ de alta fidelidad.
 localStorage, arrays, en los siguientes requisitos funcionales:
 o Seleccionar la categoría de aprendizaje, son 3 categorías:
 
-HTML
-CSS
-JS
+  • HTML
+  • CSS
+  • JS
 
 # Screenshot
 
