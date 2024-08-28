@@ -20,6 +20,6 @@ JS
 # Screenshot
 
 [![Fire-Shot-Capture-1672-FOOD-DELIVERY-food-delivery-lovat-delta-vercel-app.png](https://i.postimg.cc/QtXjC962/Fire-Shot-Capture-1672-FOOD-DELIVERY-food-delivery-lovat-delta-vercel-app.png)](https://postimg.cc/2qXsX6NG)
-[![Fire-Shot-Capture-1676-Main-dailybitsa-colorblue1s-projects-vercel-app.png](https://i.postimg.cc/FzzmgtXG/Fire-Shot-Capture-1676-Main-dailybitsa-colorblue1s-projects-vercel-app.png)](https://postimg.cc/9R6vCnMq)
 [![Fire-Shot-Capture-1669-FOOD-DELIVERY-food-delivery-lovat-delta-vercel-app.png](https://i.postimg.cc/PqbtdzMb/Fire-Shot-Capture-1669-FOOD-DELIVERY-food-delivery-lovat-delta-vercel-app.png)](https://postimg.cc/QBtLb7wV)
+[![Fire-Shot-Capture-1676-Main-dailybitsa-colorblue1s-projects-vercel-app.png](https://i.postimg.cc/FzzmgtXG/Fire-Shot-Capture-1676-Main-dailybitsa-colorblue1s-projects-vercel-app.png)](https://postimg.cc/9R6vCnMq)
 [![Fire-Shot-Capture-1677-Preguntas-dailybitsa-colorblue1s-projects-vercel-app.png](https://i.postimg.cc/NMpBHsS5/Fire-Shot-Capture-1677-Preguntas-dailybitsa-colorblue1s-projects-vercel-app.png)](https://postimg.cc/Q992L3X3)
