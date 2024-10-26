@@ -130,7 +130,7 @@ nav li:hover img {
   padding: 50px;
   max-width: 50vw;
   width: 100%;
-  height: 82vh;
+  height: auto;
   border-radius: 15px;
 }
 #cuenta-section .perfil_datos {
@@ -279,7 +279,7 @@ nav li:hover img {
   #cuenta-section {
     margin-bottom: 30px;
     margin-top: 50px;
-    height: 80vh;
+    height: auto;
   }
   #cuenta-section .fotoperfil {
     display: grid;
